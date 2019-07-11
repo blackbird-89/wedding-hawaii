@@ -95,6 +95,7 @@ header {
 h1 {
   font-weight: 300;
   font-size: 200%;
+  text-shadow: 0.5px 0.5px #444;
 }
 
 h1,
@@ -109,6 +110,13 @@ h2 {
   margin-bottom: 30px;
   font-weight: 300;
   color: #907428;
+}
+
+section:after {
+  content: url("/resources/img/clip.png");
+  display: block;
+  transform: scale(0.5);
+  height: 100px;
 }
 
 .btn:link,
