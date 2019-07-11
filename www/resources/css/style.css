@@ -28,3 +28,92 @@ html {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+/* #ab892f */
+
+/********** HEADER ************/
+
+header {
+  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
+    url("/resources/img/possibleHero1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  height: 115px;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 75px;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #666;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  margin-left: 10px;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 1px solid #ab892f;
+  padding-bottom: 4px;
+}
+
+.hero-text {
+  position: absolute;
+  width: 600px;
+  top: 21%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  margin-top: 10%;
+  color: #ab892f;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.hero-text a {
+  font-size: 90%;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 200%;
+  text-shadow: 1px 1px #666;
+}
+
+.btn:link,
+.btn:visited {
+  border: 2px solid #ab892f;
+  padding: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #ab892f;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #907428;
+  border: 1px solid #907428;
+}
