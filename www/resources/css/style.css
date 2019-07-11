@@ -79,7 +79,7 @@ header {
 .hero-text {
   position: absolute;
   width: 600px;
-  top: 21%;
+  top: 30%;
   left: 75%;
   transform: translate(-50%, -50%);
   margin-top: 10%;
@@ -95,7 +95,20 @@ header {
 h1 {
   font-weight: 300;
   font-size: 200%;
-  text-shadow: 1px 1px #666;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 170%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  color: #907428;
 }
 
 .btn:link,
@@ -116,4 +129,23 @@ h1 {
 .btn:active {
   background-color: #907428;
   border: 1px solid #907428;
+}
+
+.testimonial {
+  padding: 80px 0;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.icon {
+  height: 100px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 140%;
+  font-weight: 200;
+  line-height: 145%;
+  word-spacing: 1px;
 }
