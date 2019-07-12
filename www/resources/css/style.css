@@ -241,3 +241,42 @@ blockquote {
   background-attachment: fixed;
   height: 60vh;
 }
+
+.gallery {
+  padding: 50px 0;
+}
+
+.photos,
+.photos1 {
+  list-style: none;
+}
+
+.photos li {
+  width: 25%;
+  float: left;
+}
+
+.photos figure,
+.photos1 figure {
+  width: 100%;
+  overflow: hidden;
+}
+
+.photos img,
+.photos1 img {
+  width: 100%;
+  opacity: 0.8;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.photos img:hover,
+.photos1 img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.photos1 li {
+  width: 50%;
+  float: left;
+}
