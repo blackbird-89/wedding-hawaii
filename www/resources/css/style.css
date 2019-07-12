@@ -395,3 +395,48 @@ footer p {
 .social-links li a:active {
   color: #907428;
 }
+
+.form {
+  background-color: rgb(248, 248, 242);
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+.form h2,
+.form p {
+  text-align: center;
+  margin-left: 15%;
+  width: 35%;
+}
+
+.form p {
+  padding-bottom: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 75%;
+  height: 50px;
+  margin-left: 30%;
+  position: relative;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 80%;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 15px;
+  padding-left: 2px;
+  position: absolute;
+}
+
+.contact-form input[id="guests"] {
+  height: 70px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+form a {
+  margin-left: 30%;
+}
