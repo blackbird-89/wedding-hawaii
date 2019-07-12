@@ -232,3 +232,12 @@ blockquote {
   margin-top: 15px;
   font-weight: 400;
 }
+
+.background-scroll {
+  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
+    url("/resources/img/potback5.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+}
