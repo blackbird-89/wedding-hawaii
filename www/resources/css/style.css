@@ -185,6 +185,7 @@ blockquote {
   padding: 30px 0;
   height: 100vh;
   text-align: left;
+  position: relative;
 }
 
 .long-copy {
@@ -197,6 +198,14 @@ blockquote {
 }
 .box img {
   width: 100%;
+}
+
+.award-photo {
+  height: 200px;
+  position: absolute;
+  transform: rotate(-25deg);
+  top: 10px;
+  left: 50px;
 }
 
 .box p {
