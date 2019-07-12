@@ -208,7 +208,8 @@ blockquote {
   left: 50px;
 }
 
-.box p {
+.box p,
+.steps p {
   margin-bottom: 23px;
   line-height: 145%;
   font-size: 90%;
@@ -288,4 +289,101 @@ blockquote {
 .photos1 li {
   width: 50%;
   float: left;
+}
+
+.steps {
+  background-color: rgb(248, 248, 242);
+
+  text-align: center;
+  padding: 90px 0;
+}
+
+.steps .step-heading {
+  font-size: 130%;
+  color: #907428;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.step-box {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.background-scroll2 {
+  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
+    url("/resources/img/potback4.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+.testimonial1 {
+  padding: 70px 0;
+}
+
+section.testimonial1:after {
+  content: url("/resources/img/clip.png");
+  display: block;
+  transform: scale(0.5);
+  height: 100px;
+  text-align: center;
+}
+
+.testimonial-box:first-child {
+  text-align: right;
+}
+
+.testimonial-box:last-child {
+  padding-top: 50px;
+}
+.testimonial-box img {
+  width: 50%;
+}
+
+footer {
+  background-color: #888;
+  padding: 50px 0;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 110%;
+  text-transform: uppercase;
+}
+.footer-photos {
+  padding: 20px;
+  list-style: none;
+}
+
+.footer-photos li {
+  width: 16%;
+  float: left;
+}
+
+.footer-photos figure {
+  width: 100%;
+}
+
+.footer-photos img {
+  width: 100%;
+}
+
+.social-links {
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-links li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.social-links li a i {
+  color: #fff;
 }
