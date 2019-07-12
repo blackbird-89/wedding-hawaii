@@ -95,7 +95,7 @@ header {
 h1 {
   font-weight: 300;
   font-size: 200%;
-  text-shadow: 0.5px 0.5px #444;
+  text-shadow: 0.5px 0.5px #888;
 }
 
 h1,
@@ -203,4 +203,32 @@ blockquote {
   margin-bottom: 23px;
   line-height: 145%;
   font-size: 90%;
+}
+.package-box {
+  padding: 50px;
+  text-align: center;
+}
+
+.package-box h3 {
+  text-align: center;
+}
+.package-box img {
+  height: 100px;
+}
+
+.package-list {
+  list-style: none;
+}
+
+.package-list li {
+  padding-bottom: 5px;
+}
+
+.package-price {
+  font-size: 120%;
+  font-style: italic;
+  color: #907428;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-weight: 400;
 }
