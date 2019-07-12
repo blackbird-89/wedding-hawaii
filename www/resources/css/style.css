@@ -338,6 +338,7 @@ section.testimonial1:after {
 .testimonial-box:last-child {
   padding-top: 50px;
 }
+
 .testimonial-box img {
   width: 50%;
 }
@@ -384,6 +385,13 @@ footer p {
   font-size: 150%;
 }
 
-.social-links li a i {
+.social-links li a:link,
+.social-links li a:visited {
   color: #fff;
+  transition: color 0.5s;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+  color: #907428;
 }
