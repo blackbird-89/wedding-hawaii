@@ -42,9 +42,8 @@ header {
       from(rgb(248, 247, 247, 0.3)),
       to(rgba(248, 247, 247, 1))
     ),
-    url("/resources/img/possibleHero1.jpg");
-  background-image: linear-gradient(rgb(248, 247, 247, 0.3), rgba(248, 247, 247, 1)),
-    url("/resources/img/possibleHero1.jpg");
+    url("possibleHero1.jpg");
+  background-image: linear-gradient(rgb(248, 247, 247, 0.3), rgba(248, 247, 247, 1)), url("possibleHero1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -320,9 +319,8 @@ blockquote {
       from(rgb(248, 247, 247, 0.6)),
       to(rgba(248, 247, 247, 0.5))
     ),
-    url("/resources/img/potback5.jpg");
-  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
-    url("/resources/img/potback5.jpg");
+    url("potback5.jpg");
+  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)), url("potback5.jpg");
   background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
@@ -400,9 +398,8 @@ blockquote {
       from(rgb(248, 247, 247, 0.6)),
       to(rgba(248, 247, 247, 0.5))
     ),
-    url("/resources/img/potback4.jpg");
-  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
-    url("/resources/img/potback4.jpg");
+    url("potback4.jpg");
+  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)), url("potback4.jpg");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
