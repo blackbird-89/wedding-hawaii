@@ -11,13 +11,32 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300i,300,400,400i&display=swap" rel="stylesheet">
   <link href="vendors/fonts/css/all.css" rel="stylesheet">
   </link>
+  <link rel="apple-touch-icon" sizes="57x57" href="resources/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="resources/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="resources/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="resources/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="resources/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="resources/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="resources/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="resources/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="resources/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="resources/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+  <link rel="manifest" href="resources/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="resources/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 
-  <header>
+  <header id="home">
     <nav>
-      <div class="row">
+      <div class="row nav">
+        <a href="#home" class="home-link"><img src="resources/img/logo.svg" alt="Omnifood logo" class="logo-black"></a>
+
         <img src="resources/img/logo.svg" class="logo">
         <ul class="main-nav">
           <li><a href="#services">Services</a></li>
@@ -26,12 +45,13 @@
           <li><a href="#contact-us">Contact</a></li>
         </ul>
       </div>
-      <div class="hero-text">
-        <h1>Perfect Hawaiian wedding <br>Get married in paradise </h1>
-        <a href="#" class="btn btn-full">Make a reservation</a>
-        <a href="#" class="btn btn-ghost">Learn more</a>
-      </div>
     </nav>
+    <div class="hero-text">
+      <h1>Perfect Hawaiian wedding <br>Get married in paradise </h1>
+      <a href="#" class="btn btn-full js--scroll-to-contact">Make a reservation</a>
+      <a href="#" class="btn btn-ghost js--scroll-to-services">Learn more</a>
+    </div>
+
   </header>
 
   <section class="testimonial">
@@ -52,7 +72,7 @@
 
   </section>
 
-  <section class="services" id="services">
+  <section class="services js--services" id="services">
     <div class="row">
       <img class="award-photo" src="resources/img/firstplace-allhawaii_2.png">
       <h2>Our wedding services and locations</h2>
@@ -282,19 +302,17 @@
     </div>
   </section>
 
-  <section class="form" id="contact-us">
+  <section class="form js--contact-form" id="contact-us">
     <div class="row">
       <h2>Send us a note!</h2>
       <p>Interested in hearing more about our wedding packages or have a question? We would love to hear from
         you!<br>
-
-        Fill out the contact form below. </p>
-      <div class="wrapper">
-        <img src="resources/img/bou.jpg">
-        <p id="details">Office location: <br> 1765 Waimanalo Beach <br> Oahu, Hawaii <br> office hours: m-f 9-5pm sat
-          10-3pm<br> <span id="small-text">due to our event schedule hours may change without notice</span>
-        </p>
-      </div>
+        <div class="wrapper">
+          <img src="resources/img/bou.jpg">
+          <p id="details">Office location: <br> 1765 Waimanalo Beach <br> Oahu, Hawaii <br> office hours: m-f 9-5pm sat
+            10-3pm<br> <span id="small-text">due to our event schedule hours may change without notice</span>
+          </p>
+        </div>
     </div>
     <div class="row">
       <form method="post" action="#" class="contact-form">
@@ -373,6 +391,9 @@
       </ul>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 
 </body>
 

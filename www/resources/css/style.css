@@ -58,6 +58,14 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  margin: 5px 0;
+  height: 40px;
+  width: auto;
+  float: left;
+  display: none;
+}
+
 .main-nav {
   list-style: none;
   float: right;
@@ -66,7 +74,7 @@ header {
 }
 
 .main-nav li {
-  display: inline-block;
+  display: none;
 }
 
 .main-nav li a:link,
@@ -85,6 +93,39 @@ header {
 .main-nav li a:active {
   border-bottom: 1px solid #ab892f;
   padding-bottom: 4px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.692);
+  box-shadow: 0 2px 2px rgb(221, 219, 219);
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li {
+  display: inline-block;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  font-size: 80%;
+  padding: 4px 0;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
 }
 
 .hero-text {
