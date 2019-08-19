@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -34,7 +35,15 @@ html {
 /********** HEADER ************/
 
 header {
-  background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgb(248, 247, 247, 0.3)),
+      to(rgba(248, 247, 247, 1))
+    ),
+    url("/resources/img/possibleHero1.jpg");
+  background-image: linear-gradient(rgb(248, 247, 247, 0.3), rgba(248, 247, 247, 1)),
     url("/resources/img/possibleHero1.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -52,7 +61,8 @@ header {
 .main-nav {
   list-style: none;
   float: right;
-  margin-top: 75px;
+  margin-top: 86px;
+  margin-left: 30px;
 }
 
 .main-nav li {
@@ -61,12 +71,13 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  color: #666;
+  color: #555;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 93%;
   margin-left: 10px;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
@@ -79,23 +90,23 @@ header {
 .hero-text {
   position: absolute;
   width: 600px;
-  top: 30%;
-  left: 75%;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin-top: 10%;
   color: #ab892f;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
 }
 
-.hero-text a {
+.hero-text a:first-of-type {
   font-size: 90%;
+  margin-right: 20px;
 }
 
 h1 {
-  font-weight: 300;
   font-size: 200%;
-  text-shadow: 0.5px 0.5px #888;
 }
 
 h1,
@@ -115,6 +126,16 @@ h2 {
   text-align: center;
 }
 
+h2:after {
+  display: block;
+  height: 1px;
+  background-color: #907428;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 h3 {
   text-align: left;
   margin-top: 10px;
@@ -125,6 +146,7 @@ h3 {
 section.testimonial:after {
   content: url("/resources/img/clip.png");
   display: block;
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
   height: 100px;
   text-align: center;
@@ -136,8 +158,12 @@ section.testimonial:after {
   padding: 8px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 95%;
+  font-weight: 300;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-box-shadow: 1px 1px 1px #999;
+  box-shadow: 1px 1px 1px #999;
 }
 
 .btn-full:link,
@@ -196,6 +222,7 @@ blockquote {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .box img {
   width: 100%;
 }
@@ -203,6 +230,7 @@ blockquote {
 .award-photo {
   height: 200px;
   position: absolute;
+  -webkit-transform: rotate(-25deg);
   transform: rotate(-25deg);
   top: 10px;
   left: 50px;
@@ -238,12 +266,20 @@ blockquote {
   font-size: 120%;
   font-style: italic;
   color: #907428;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 15px;
   font-weight: 400;
 }
 
 .background-scroll {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgb(248, 247, 247, 0.6)),
+      to(rgba(248, 247, 247, 0.5))
+    ),
+    url("/resources/img/potback5.jpg");
   background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
     url("/resources/img/potback5.jpg");
   background-position: bottom;
@@ -276,13 +312,18 @@ blockquote {
 .photos1 img {
   width: 100%;
   opacity: 0.8;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .photos img:hover,
 .photos1 img:hover {
   opacity: 1;
+  -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -311,6 +352,14 @@ blockquote {
 }
 
 .background-scroll2 {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgb(248, 247, 247, 0.6)),
+      to(rgba(248, 247, 247, 0.5))
+    ),
+    url("/resources/img/potback4.jpg");
   background-image: linear-gradient(rgb(248, 247, 247, 0.6), rgba(248, 247, 247, 0.5)),
     url("/resources/img/potback4.jpg");
   background-position: top;
@@ -326,6 +375,7 @@ blockquote {
 section.testimonial1:after {
   content: url("/resources/img/clip.png");
   display: block;
+  -webkit-transform: scale(0.5);
   transform: scale(0.5);
   height: 100px;
   text-align: center;
@@ -353,7 +403,9 @@ footer p {
   color: #fff;
   font-size: 110%;
   text-transform: uppercase;
+  word-spacing: 4px;
 }
+
 .footer-photos {
   padding: 20px;
   list-style: none;
@@ -388,6 +440,7 @@ footer p {
 .social-links li a:link,
 .social-links li a:visited {
   color: #fff;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -399,7 +452,7 @@ footer p {
 .form {
   background-color: rgb(248, 248, 242);
   padding-bottom: 80px;
-  padding-top: 60px;
+  padding-top: 55px;
   position: relative;
 }
 
@@ -412,7 +465,7 @@ footer p {
 
 .wrapper {
   position: absolute;
-  top: 10%;
+  top: 8%;
   right: 15%;
   border: 0.2px solid rgb(212, 209, 209);
   text-align: center;
@@ -421,7 +474,7 @@ footer p {
 .wrapper img {
   width: 80%;
   height: auto;
-  padding-top: 10%;
+  padding-top: 7%;
 }
 
 .wrapper #details {
@@ -453,8 +506,8 @@ footer p {
   position: relative;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
   font-size: 80%;
   text-transform: uppercase;
   font-style: italic;
@@ -463,8 +516,34 @@ footer p {
   position: absolute;
 }
 
-.contact-form input[id="guests"] {
-  height: 70px;
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  font-size: 80%;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 15px;
+  padding-left: 2px;
+  position: absolute;
+}
+
+.contact-form input::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+  font-size: 80%;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 15px;
+  padding-left: 2px;
+  position: absolute;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 80%;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 15px;
+  padding-left: 2px;
+  position: absolute;
 }
 
 .contact-form textarea {
