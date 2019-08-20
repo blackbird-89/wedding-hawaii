@@ -184,7 +184,7 @@ h3 {
 }
 
 section.testimonial:after {
-  content: url("/resources/img/clip.png");
+  content: url("clip.png");
   display: block;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
@@ -411,7 +411,7 @@ blockquote {
 }
 
 section.testimonial1:after {
-  content: url("/resources/img/clip.png");
+  content: url("clip.png");
   display: block;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
