@@ -1,6 +1,6 @@
 # wedding-hawaii
 
-HTML5, CSS3 & a bit of JQuery wedding inspired website. <br>
+HTML5, CSS3 & a bit of JQuery wedding inspired fictional website. <br>
 No functionality - just practising CSS skills.
 
 Start with <code>npm install</code>.<br>
